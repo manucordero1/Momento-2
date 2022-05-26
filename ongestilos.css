@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.grid_container{
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: 1fr 9fr 1fr;
+ grid-auto-flow: row;
+ grid-template-areas:
+    "header header"
+    "hola hola"
+    "footer footer";
+
+}
+
+
+
+
+
+
+.header{
+	grid-area: header;
+	background-color: #ffffff;
+	margin-top: 5px;
+	padding-left: 100px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+
+}
+
+
+.hola{
+	grid-area: hola;
+	background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.quienes{
+	width: 48%;
+	font-family: Cooper Black;
+	color: #fff;
+	float: left;
+	font-size: 22px;
+	margin: 10px;
+	margin-left: 40px;
+	margin-top: 150px;
+
+
+
+}
+
+h1{
+	color: #F8AB29;
+}
+
+.quienes h1{
+	font-size: 50px;
+	padding-bottom: 10px;
+
+}
+
+.quienesimag img{
+	width: 45%;
+	float: right;
+	display: flex;
+}
+
+.colores{
+	width: 46%;
+	font-family: Cooper Black;
+	color: #fff;
+	font-size: 22px;
+	margin: 10px;
+	margin-left: 40px;
+	margin-top: 80px;
+	float: left;
+}
+
+.tipografias{
+	width: 46%;
+	font-family: Cooper Black;
+	color: #fff;
+	font-size: 40px;
+	margin: 10px;
+	margin-left: 40px;
+	margin-top: 80px;
+	float: right;
+	padding: 5px;
+}
+
+.Arial{
+	font-family: Arial;
+	padding: 3px;
+
+}
+
+.OpenSans{
+	font-family: Open Sans;
+	padding: 3px;
+}
+
+
+
+.amarillo{
+	background-color:#F8AB29 ;
+	padding: 10px;
+}
+
+.rojo{
+	background-color:#502C2C ;
+	padding: 10px;
+}
+
+.neutro{
+	background-color: #BFA36B;
+	padding: 10px;
+}
+
+.neutro2{
+	background-color:#DABD79 ;
+	padding: 10px;
+}
+
+.negro{
+	background-color: #050505;
+	padding: 10px;
+}
+
+.blanco{
+	background-color: #ffffff;
+	padding: 10px;
+	color: #050505;
+}
+
+.wescritorio img{
+	width: 90%;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.wescritorio{
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.wescritorio2 img{
+	width: 90%;
+	text-align: center;
+	justify-content: center;
+	margin: auto;text-align: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.wescritorio2{
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.wtableta{
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.tableta{
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.wcelular{
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.celular{
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+}
+
+
+.escritorio img{
+	width: 90%;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.escritorio{
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+}
+
+
+
+.escritorio2 img{
+	width: 90%;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.escritorio3{
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+}
+
+
+.footer{
+	grid-area: footer;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1200px)  {
+	.header{
+margin: auto;
+justify-content: center;
+text-align: center;
+margin: auto;
+	margin-top: 5px;
+	padding-left: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 40%;
+
+}
+
+
+
+.quienes{
+	width: 100%;
+	float: none;
+	font-size: 20px;
+	margin:auto;
+	margin-left: 0px;
+	margin-top: 30px;
+	padding: 5px;
+
+
+
+}
+
+.quines p{
+	width: 700%;
+}
+
+
+.quienes h1{
+	font-size: 26px;
+	width: 100%;
+
+}
+
+.quienesimag img{
+	width:90%;
+	float: none;
+	display: block;
+	margin: auto;
+	justify-content: center;
+	text-align: center;
+}
+
+.colores{
+	width: 100%;
+	font-size: 20px;
+	margin: auto;
+	margin-left: 0px;
+	margin-top: 20px;
+	float: none;
+	justify-content: center;
+	text-align: center;
+}
+
+.tipografias{
+	width: 100%;
+	font-size:20px;
+	margin: auto;
+	margin-left: 0px;
+	margin-top: 20px;
+	float: none;
+	justify-content: center;
+	text-align: center;
+}
+
+.wcelular img{
+	width: 50%;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.wtableta img{
+		width: 80%;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.tableta img{
+			width: 80%;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+
+}
+
+.escritorio3 img{
+			width: 80%;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+
+}
+

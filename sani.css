@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%; 
+	 
+}
+
+.grid_container{
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: 1fr 6fr 1fr;
+ grid-auto-flow: row;
+ grid-template-areas:
+    "header header"
+    "bodi bodi"
+    "footer footer";
+
+}
+
+
+
+
+.header{
+	grid-area: header;
+	background-color: #ffffff;
+	margin-top: 5px;
+	padding-left: 100px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+
+}
+
+
+
+.bodi{
+	grid-area: bodi;
+	background-image: url("PNG/Incendio3.png") 
+}
+.main{
+	grid-area: main;;
+}
+
+form{
+width: 36%;
+background-color: rgba(102, 43, 35, 0.6);
+border-radius: 19px;
+font-family: Arial;
+margin: auto;
+margin-top: 7%;
+float: right;
+margin-right: 120px;
+text-align: center;
+
+
+}
+
+
+
+
+input {
+    border-radius: 5px ;
+    background-color: #BFA36B ;
+    border: solid 2px #BFA36B ;
+    color: #502C2C;
+    padding: 2px;
+
+}
+
+.botones{
+	padding: 8px;
+	align-self: center;
+	margin: auto;
+	display: flex;
+	width: 90%;
+}
+
+.botones button{
+	width: 25%;
+	margin: 3px;
+	padding: 10px;
+	color:#502C2C;
+	font-size: 18px;
+	font-family: Arial;
+	font-weight: 600;
+	margin-top: 4px;
+	border-radius: 5px ;
+    background-color: #BFA36B ;
+    border: solid 2px #BFA36B ;
+    color: #502C2C;
+}
+
+
+
+.NA{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	opacity: none;
+}
+.NA input{
+	width: 50%;
+	color:#502C2C;
+	text-align: center;
+	padding: 6px;
+	margin:2px;
+
+
+
+}
+
+::-webkit-input-placeholder{
+	color:#502C2C;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+form input[type=submit] {
+    background-color: #F8AB29;
+    color: #502C2C;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+opacity: 1;
+margin: 9px;
+font-weight: 600;
+
+}
+
+.boton p{
+	text-align: center;
+}
+
+
+    .salvar{
+	font-size: 28px;
+	color:#F8AB29;
+	font-family: Arial;
+	font-style: italic;
+	margin:15px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.A{
+	display: block;
+	width: 90%;
+	color:#502C2C ;
+	margin: auto;
+	opacity: none;
+}
+
+
+
+   .A input{
+	text-align: center;
+	width: 100%;
+	color:#502C2C;
+	display: block;;
+	padding: 6px;
+	margin: 8px;
+}
+
+
+
+
+
+.texto{
+	grid-area: texto;
+	width: 50%;
+	float: left;
+}
+
+.texto header{
+font-size: 38px;
+font-family: Cooper Black;
+color: #F8AB29;
+padding-top: 150px;
+margin-left: 85px;;
+}
+
+.texto footer{
+	font-size: 19px;
+font-family: Cooper Black;
+color: #DABD79;
+padding-top: 10px;
+width: 70%;
+padding-top: 70px;
+margin-left: 110px;
+padding-bottom: 100px;
+}
+
+
+.texto footer p{
+padding-bottom: 5px;
+display: flex;
+}
+
+
+.texto footer img{
+width: 55%;
+display: block;
+}
+
+.seguinos{
+	display: flex;
+	margin-top: 65px;
+	background-color:rgba(191, 163, 107, 0.7);
+	width: 55% ;
+	border-radius: 5px;
+
+}
+
+.seguinos p{
+	margin-top: 12px;
+	color:#502C2C;
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+.footer{
+	grid-area: footer;;
+	font-size: 40px;
+	color: #050505;
+}
+
+.footer p{
+	float: left;
+		margin: 30px;
+		font-family: Cooper Black;
+}
+
+.footer img{
+	float: right;
+	width: 70px;
+	height: 70px;
+		margin: 30px;
+}
+
+
+ @media (min-width: 991px) and (max-width: 1199px){
+form{
+width: 37%;
+background-color: rgba(102, 43, 35, 0.6);
+border-radius: 19px;
+font-family: Arial;
+margin: auto;
+margin-top: 13%;
+float: right;
+margin-right: 120px;
+text-align: center;
+
+
+}
+
+
+}
+
+
+
+
+
+ @media (min-width: 600px) and (max-width: 990px){
+.header{
+	margin: auto;
+	margin-top:25px;
+	justify-content: center;
+	padding-bottom: 5px;
+	padding-left: 0;
+
+}
+
+
+
+	.bodi{
+
+	background-image: url("PNG/Incendio5.png") 
+}
+	.grid_container { 
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.5fr 5fr 1fr;
+		grid-auto-flow: row;
+		grid-template-areas:
+		"header header"
+		"bodi bodi"
+		"footer footer"
+	}
+
+.texto{
+	width: 93%;
+	float: none;
+	text-align: center;
+	margin: auto;
+}
+
+.texto header{
+font-size: 38px;
+font-family: Cooper Black;
+color: #F8AB29;
+border: 1px black;
+padding-top:50px;
+margin: 0;
+justify-content: center;
+margin: auto;
+}
+
+
+
+.texto footer{
+font-size: 19px;
+font-family: Cooper Black;
+color: #DABD79;
+width:100%;
+padding-top: 50px;
+margin-left: 0px;
+padding-bottom: 0;
+
+}
+
+.texto footer p{
+padding-bottom: 15px;
+display: flex;
+width: 75%;
+text-align: center;
+margin: auto;
+}
+
+.texto footer img{
+width: 50%;
+margin: auto;
+margin-right:none;
+}
+
+.seguinos{
+	display: flex;;
+	background-color:rgba(191, 163, 107, 0.7);
+	width:35% ;
+	border-radius: 5px;
+
+
+}
+
+.seguinos p{
+
+	color:#502C2C;
+	font-size: 15px;
+	margin-top: 16px;
+	
+}
+
+.texto figure{
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+	margin-top: 35px;
+}
+
+.texto figure p{
+	margin-top: 10px;
+}
+
+
+	form{
+		width: 90%;
+		text-align: center;
+		margin: auto;
+		margin-top: 60px;
+		float: none;
+		margin-bottom: 90px;
+	}
+
+	.NA{
+		display: block;
+	}
+
+
+	.NA input{
+	text-align: center;
+	width: 98%;
+	color:#502C2C;
+	display: block;;
+	padding: 8px;
+	margin: 10px;
+
+}
+.A input{
+
+	width: 98%;
+	padding: 8px;
+	margin: 10px;
+}
+
+.botones{
+width: 98%;
+
+}
+
+.footer{
+
+	font-size: 25px;
+
+	justify-content: center;
+	margin: auto;
+}
+
+.footer p{
+	float: none;
+		
+}
+
+.footer img{
+	float: none;
+	width: 40%;
+	height: auto;
+	margin: auto;
+	
+}
+
+.footer figure{
+	text-align: center;
+}
+
+
+}
+
+
+
+@media (max-width: 599px)  {
+
+.header{
+	margin: auto;
+	margin-top:25px;
+	justify-content: center;
+	padding-bottom: 5px;
+	padding-left: 0;
+
+}
+
+
+
+	.bodi{
+
+	background-image: url("PNG/Incendio4.png") 
+}
+	.grid_container { 
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.5fr 5fr 1fr;
+		grid-auto-flow: row;
+		grid-template-areas:
+		"header header"
+		"bodi bodi"
+		"footer footer"
+	}
+
+.texto{
+	width: 90%;
+	float: none;
+	text-align: center;
+	margin: auto;
+}
+
+.texto header{
+font-size: 38px;
+font-family: Cooper Black;
+color: #F8AB29;
+border: 1px black;
+padding-top:50px;
+margin: 0;
+justify-content: center;
+margin: auto;
+}
+
+.texto footer{
+	font-size: 19px;
+font-family: Cooper Black;
+color: #DABD79;
+width: 100%;
+padding-top: 50px;
+margin-left: 0px;
+padding-bottom: 0;
+}
+
+.texto footer p{
+padding-bottom: 15px;
+display: flex;
+}
+
+.texto footer img{
+width: 55%;
+margin: auto;
+margin-left: 1%;
+}
+
+.seguinos{
+	display: flex;;
+	background-color:rgba(191, 163, 107, 0.7);
+	width: 50% ;
+	border-radius: 5px;
+
+
+}
+
+.seguinos p{
+
+	color:#502C2C;
+	font-size: 12px;
+	
+}
+
+.texto figure{
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+	margin-top: 15px;
+}
+
+
+
+	form{
+		width: 98%;
+		text-align: center;
+		margin: auto;
+		margin-top: 60px;
+		float: none;
+		margin-bottom: 90px;
+	}
+
+	.NA{
+		display: block;
+	}
+
+
+	.NA input{
+	text-align: center;
+	width: 98%;
+	color:#502C2C;
+	display: block;;
+	padding: 8px;
+	margin: 10px;
+
+}
+.A input{
+
+	width: 98%;
+	padding: 8px;
+	margin: 10px;
+}
+
+.botones{
+width: 98%;
+
+}
+
+.footer{
+
+	font-size: 25px;
+
+	justify-content: center;
+	margin: auto;
+}
+
+.footer p{
+	float: none;
+		
+}
+
+.footer img{
+	float: none;
+	width: 40%;
+	height: auto;
+	margin: auto;
+	
+}
+
+.footer figure{
+	text-align: center;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
